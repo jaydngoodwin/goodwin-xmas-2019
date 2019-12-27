@@ -1,0 +1,2 @@
+(this["webpackJsonpgoodwin-xmas-2019"]=this["webpackJsonpgoodwin-xmas-2019"]||[]).push([[0],[,,,function(n,e,t){n.exports=t(10)},,,,,function(n,e,t){},function(n,e,t){},function(n,e,t){"use strict";t.r(e);var o=t(0),a=t.n(o),c=t(2),r=t.n(c),s=(t(8),t(9),function(){return a.a.createElement("div",{className:"App"},"Hello World")});r.a.render(a.a.createElement(s,null),document.getElementById("root"))}],[[3,1,2]]]);
+//# sourceMappingURL=main.14c8d64b.chunk.js.map
