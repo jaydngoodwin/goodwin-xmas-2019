@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="73.797844mm"
+   height="100.40726mm"
+   viewBox="0 0 73.797844 100.40726"
+   version="1.1"
+   id="svg496"
+   inkscape:version="0.92.4 (f8dce91, 2019-08-02)"
+   sodipodi:docname="tree.svg">
+  <defs
+     id="defs490" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="226.6778"
+     inkscape:cy="126.98924"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="978"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata493">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-24.333219,-55.540419)">
+    <g
+       transform="matrix(0.26458333,0,0,0.26458333,2.1865363,39.795594)"
+       id="g247">
+      <g
+         id="g241">
+        <polygon
+           style="fill:#39b28a"
+           points="83.704,397 362.625,397 295.495,283 150.834,283 "
+           id="polygon231" />
+        <polyline
+           style="fill:#2a936d"
+           points="317.239,319.58 295.495,283 151,283   "
+           id="polyline233" />
+        <polygon
+           style="fill:#39b28a"
+           points="295.495,283 328.588,283 270.912,186 237.82,186 208.51,186 175.417,186 117.741,283 150.834,283 "
+           id="polygon235" />
+        <polyline
+           style="fill:#2a936d"
+           points="289.306,216.92 270.912,186 237.82,186 208.51,186 175,186   "
+           id="polyline237" />
+        <polygon
+           style="fill:#39b28a"
+           points="297.859,186 223.165,59.508 148.47,186 175.417,186 208.51,186 237.82,186 270.912,186 "
+           id="polygon239" />
+      </g>
+      <rect
+         style="fill:#846f5e"
+         x="194"
+         y="397"
+         width="53"
+         height="42"
+         id="rect243" />
+      <polyline
+         style="fill:#6d5848"
+         points="194,397 247,397 247,439  "
+         id="polyline245" />
+    </g>
+  </g>
+</svg>
+
+
+<svg
+   viewBox="0 0 73.797844 100.40726">
+  <g
+     transform="translate(-24.333219,-55.540419)">
+    <g
+       transform="matrix(0.26458333,0,0,0.26458333,2.1865363,39.795594)">
+      <g>
+        <polygon
+           style="fill:#39b28a"
+           points="83.704,397 362.625,397 295.495,283 150.834,283 "/>
+        <polyline
+           style="fill:#2a936d"
+           points="317.239,319.58 295.495,283 151,283   "/>
+        <polygon
+           style="fill:#39b28a"
+           points="295.495,283 328.588,283 270.912,186 237.82,186 208.51,186 175.417,186 117.741,283 150.834,283 "/>
+        <polyline
+           style="fill:#2a936d"
+           points="289.306,216.92 270.912,186 237.82,186 208.51,186 175,186   "/>
+        <polygon
+           style="fill:#39b28a"
+           points="297.859,186 223.165,59.508 148.47,186 175.417,186 208.51,186 237.82,186 270.912,186 "/>
+      </g>
+      <rect
+         style="fill:#846f5e"
+         x="194"
+         y="397"
+         width="53"
+         height="42"/>
+      <polyline
+         style="fill:#6d5848"
+         points="194,397 247,397 247,439  "/>
+    </g>
+  </g>
+</svg>
