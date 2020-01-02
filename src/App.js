@@ -1,6 +1,5 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components'
-import './App.css';
 import {StoreProvider} from './store'
 import BackgroundMusic from './BackgroundMusic'
 import { ChristmasTree } from './ChristmasTree'
@@ -25,7 +24,7 @@ const GlobalStyle = createGlobalStyle`
 
 const StyledTitle = styled.h1`
   color: #fff;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Solway', serif;
   text-align: center;
   line-height: 15vh;
   font-size: calc(3vw);

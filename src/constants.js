@@ -35,7 +35,7 @@ export const baublePositions = [
     {"top":"10%", "left":"41%"},
     {"top":"10%", "left":"51%"},
 ]
-export const modalTypes = ["BJ","AE","MS","J","STD","HE","TRIVIA","JOKE"]
+export const uniqueModalTypes = ["BJ","AE","MS","J","STD","HE"]
 export const trivia = [
     "Before turkey the traditional Christmas meal in England was a pigs head and mustard",
     "Many parts of the Christmas tree can be eaten with the needles being a good source of vitamin C",
@@ -54,4 +54,18 @@ export const jokes = [
     {joke:"What jumps from cake to cake and tastes of almonds?", answer:"Tarzipan"},
     {joke:"Why did no one bid for Rudolph and Blitzen on eBay?", answer:"Because they were two deer!"},
     {joke:"How did Scrooge win the football game?", answer:"The ghost of Christmas passed!"}
+]
+
+const importAll = (r) => {
+    return r.keys().map(r)
+}
+  
+export const baubleSvgs = importAll(require.context('./icons/baubles', false, /\.(svg)$/))
+
+const gtyJpgs = importAll(require.context('./media/gty', false, /\.(jpg)$/))
+
+export const gtys = [
+    {path:gtyJpgs[0], answer: "1986", options: ["1986","1985","1989"]},
+    {path:gtyJpgs[1], answer: "1995", options: ["1997","1992","1995"]},
+    {path:gtyJpgs[2], answer: "2017", options: ["2016","2017","2018"]},
 ]

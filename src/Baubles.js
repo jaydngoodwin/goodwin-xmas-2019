@@ -1,17 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import styled, { keyframes } from 'styled-components'
-import { baublePositions, modalTypes, trivia, jokes } from './constants'
-import { useStore } from './store';
-
-const importAll = (r) => {
-    return r.keys().map(r)
-}
-  
-const baubleSvgs = importAll(require.context('./icons/baubles', false, /\.(svg)$/))
+import { baubleSvgs, baublePositions, uniqueModalTypes, gtys, trivia, jokes } from './constants'
+import { useStore } from './store'
 
 const swing = keyframes`
-  25% { transform: rotate(3deg)}
-  75% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg)}
+  100% { transform: rotate(-3deg); }
 `
 
 const BaubleImage = styled.img`
@@ -22,13 +16,13 @@ const BaubleImage = styled.img`
   left: ${props => props.left};
 
   &:hover {
-    animation: ${swing} ease-in-out 1s infinite normal;
+    animation: ${swing} ease-in-out 1s infinite alternate;
     transform-origin: top;
   }
 `
 
 const Bauble = (props) => {
-    const { showUniqueModal, showTriviaModal, showJokeModal } = useStore()
+    const { showUniqueModal, showGTYModal, showTriviaModal, showJokeModal } = useStore()
 
     return (
         <BaubleImage src={props.image} {...props.position} onClick={() => {
@@ -40,6 +34,9 @@ const Bauble = (props) => {
                 case "STD":
                 case "HE":
                     showUniqueModal(props.modalType)
+                    break
+                case "GTY":
+                    showGTYModal(props.gty)
                     break
                 case "TRIVIA":
                     showTriviaModal(props.trivia)
@@ -58,12 +55,13 @@ const Baubles = () => {
     const [baubles, setBaubles] = useState([])
     useEffect(() => {
         setBaubles(
-            modalTypes.concat(Array(3).fill("TRIVIA")).concat(Array(3).fill("JOKE")).map((modalType, i) => (
+            uniqueModalTypes.concat(Array(3).fill("GTY")).concat(Array(3).fill("TRIVIA")).concat(Array(3).fill("JOKE")).map((modalType, i) => (
                 <Bauble 
                     key={i}
                     image={baubleSvgs[Math.floor(Math.random()*baubleSvgs.length)]}
                     position={baublePositions.splice(Math.floor(Math.random()*baublePositions.length), 1)[0]}
                     modalType={modalType}
+                    gty={modalType === "GTY" ? gtys.splice(Math.floor(Math.random()*gtys.length), 1)[0] : ''}
                     trivia={modalType === "TRIVIA" ? trivia.splice(Math.floor(Math.random()*trivia.length), 1)[0] : ''}
                     joke={modalType === "JOKE" ? jokes.splice(Math.floor(Math.random()*jokes.length), 1)[0] : {}}
                 />
@@ -73,7 +71,7 @@ const Baubles = () => {
 
     return (
         <React.Fragment>
-        {baubles}
+            {baubles}
         </React.Fragment>
     )
 }

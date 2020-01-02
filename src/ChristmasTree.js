@@ -6,8 +6,7 @@ import Tree from './icons/tree.svg'
 
 const TreeContainer = styled.div`
   height: 80vh;
-  width: auto;
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%)
@@ -15,7 +14,6 @@ const TreeContainer = styled.div`
 
 const StyledTree = styled.img`
   height: 100%;
-  width: auto;
 `
 
 const ChristmasTree = () => {

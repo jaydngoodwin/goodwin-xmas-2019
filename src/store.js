@@ -4,10 +4,11 @@ const StoreContext = createContext();
 
 const initialState = {
     paused: false,
-    quiet: false,
+    quiet: true,
     modalType: '',
     trivia: '',
-    joke: {}
+    joke: {},
+    gty: ''
 }
 
 const storeReducer = (state, action) => {
@@ -37,28 +38,50 @@ const storeReducer = (state, action) => {
                 ...state,
                 modalType: action.payload,
                 trivia: '',
-                joke: {}
+                joke: {},
+                gty: '',
+                paused: false,
+                quiet: false
+            }
+        case 'SHOW_GTY_MODAL':
+            return {
+                ...state,
+                modalType: "GTY",
+                trivia: '',
+                joke: {},
+                gty: action.payload,
+                paused: false,
+                quiet: false            
             }
         case 'SHOW_TRIVIA_MODAL':
             return {
                 ...state,
                 modalType: "TRIVIA",
                 trivia: action.payload,
-                joke: {}
+                joke: {},
+                gty: '',
+                paused: false,
+                quiet: false
             }
         case 'SHOW_JOKE_MODAL':
             return {
                 ...state,
                 modalType: "JOKE",
                 trivia: '',
-                joke: action.payload
+                joke: action.payload,
+                gty: '',
+                paused: false,
+                quiet: false
             }
         case 'HIDE_MODAL':
             return {
                 ...state,
                 modalType: '',
                 trivia: '',
-                joke: {}
+                joke: {},
+                gty: '',
+                paused: false,
+                quiet: false
             }
         default:
             throw new Error(`Unsupported action type: ${action.type}`)
@@ -84,6 +107,7 @@ const useStore = () => {
     const quietenMusic = () => {dispatch({type: 'QUIETEN_MUSIC'})}
     const loudenMusic = () => {dispatch({type: 'LOUDEN_MUSIC'})}
     const showUniqueModal = (modalType) => {dispatch({type: 'SHOW_UNIQUE_MODAL', payload: modalType})}
+    const showGTYModal = (gty) => {dispatch({type: 'SHOW_GTY_MODAL', payload: gty})}
     const showTriviaModal = (trivia) => {dispatch({type: 'SHOW_TRIVIA_MODAL', payload: trivia})}
     const showJokeModal = (joke) => {dispatch({type: 'SHOW_JOKE_MODAL', payload: joke})}
     const hideModal = () => {dispatch({type: 'HIDE_MODAL'})}
@@ -95,6 +119,7 @@ const useStore = () => {
         quietenMusic,
         loudenMusic,
         showUniqueModal,
+        showGTYModal,
         showTriviaModal,
         showJokeModal,
         hideModal
