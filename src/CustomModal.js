@@ -175,7 +175,7 @@ const CustomModal = () => {
                         <PaddedDiv>
                             <ModalText>Sophie</ModalText>
                             {/* <ReactPlayer width={"40vw"} url={sVideo} loop={true} playing muted/> */}
-                            <ModalVideo controls src={sVideo} onPlay={pauseMusic} onPause={loudenMusic} onEnded={startMusic}/>
+                            <ModalVideo controls src={sVideo} onPlay={pauseMusic} onPause={startMusic} onEnded={startMusic}/>
                         </PaddedDiv>
                     </SideBySide>
                 </React.Fragment>
